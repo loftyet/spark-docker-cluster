@@ -10,7 +10,7 @@ ARG PY4J_VERSION
 RUN apt-get update -y && apt-get -y install openjdk-8-jdk net-tools procps
 
 # install Spark
-RUN curl -s http://mirror.reverse.net/pub/apache/spark/spark-${APACHE_SPARK_VERSION}/spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz | tar -xz -C /usr/local/
+RUN curl -s https://www.apache.org/dyn/closer.lua/spark/spark-2.4.3/spark-2.4.3-bin-hadoop2.7.tgz | tar -xz -C /usr/local/
 RUN cd /usr/local && ln -s spark-${APACHE_SPARK_VERSION}-bin-hadoop${HADOOP_VERSION} spark
 
 # set up environment variables

@@ -4,11 +4,11 @@
 ANACONDA3_VERSION=5.3.0
 
 # Version of pre-built  Apache spark and Hadoop from spark.apache.org
-APACHE_SPARK_VERSION=2.4.1
+APACHE_SPARK_VERSION=2.4.3
 HADOOP_VERSION=2.7
 
 # Version of py4j used in the Spark build
-PY4J_VERSION=0.10.7
+PY4J_VERSION=0.10.8.1
 
 docker build --build-arg APACHE_SPARK_VERSION=$APACHE_SPARK_VERSION \
     --build-arg HADOOP_VERSION=$HADOOP_VERSION \
